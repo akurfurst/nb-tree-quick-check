@@ -14,6 +14,10 @@ public class NbQuickCheck {
     if(!tree.containsKey(root)) {
       return;
     }
+    System.out.println(root);
+    for(int child : tree.get(root)){
+      preOrder(tree, child);
+    }
   }
 
   /**
